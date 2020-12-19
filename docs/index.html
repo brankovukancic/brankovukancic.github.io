@@ -10,8 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style type="text/css">
-        body {
-            background: lightgray !important;
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: rgb(29, 29, 29);
+                color: white;
+            }
         }
     </style>
 </head>
@@ -20,8 +23,34 @@
 
     <div class="container">
         <h1 class="text-center">Branko Vukancic</h1>
+        <br>
         <img src="profile.jpeg" class="center-block img-rounded" alt="profile">
-        <h4 class="text-center">Software Developer & Web Designer</p>
+        <h2 class="text-center"><small>Software Developer & Web Designer</small></h2>
+    </div>
+
+    <div class="container">
+        <h2 class="text-left">Projects</h2>
+
+        <div class="row">
+            <div>
+                <h3 class="text-center">Litani Products Website</h3>
+                <a href="https://www.litaniproducts.com/">
+                    <img src="litaniproductswebsite.jpeg" class="center-block  img-responsive img-rounded"
+                        alt="Litani Products Website">
+                </a>
+                <h3 class="text-center"><small>Web Designer</small></h3>
+            </div>
+            <hr>
+            <div>
+                <h3 class="text-center">Second Sole Mentor Website</h3>
+                <a href="https://www.secondsolementor.com/">
+                    <img src="secondsolementorwebsite.jpeg" class="center-block img-responsive img-rounded"
+                        alt="Second Sole Mentor Website">
+                </a>
+                <h3 class="text-center"><small>Contributed to the overall design and layout</small></h3>
+            </div>
+        </div>
+        <br>
     </div>
 
 </body>
