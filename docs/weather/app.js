@@ -34,6 +34,7 @@ window.addEventListener('load', () => {
                     // locationTimezone.textContent = tz_id
                     temperatureIconPath = icon.split("/")
                     document.getElementById("temperature-icon").src = temperatureIconPath[3] + "/" + temperatureIconPath[4] + "/" + temperatureIconPath[5] + "/" + temperatureIconPath[6]
+                    temperatureDegree.textContent = temp_f
                     temperatureDescription.textContent = text
 
                     // Change temperature to Celsius/Fahrenheit
