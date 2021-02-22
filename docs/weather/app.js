@@ -16,14 +16,14 @@ window.addEventListener('load', () => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
 
-            const api = 'https://api.weatherapi.com/v1/current.json?key=35bb34a68e7340ef81945003202012&q=' + lat + ',' + long;
+            const api = 'https://api.weatherapi.com/v1/current.json?key=da231d074e9546178ea163658212202&q=' + lat + ',' + long;
 
             fetch(api)
                 .then(response => {
                     return response.json();
                 })
                 .then(data => {
-                    const { country, name, region, tz_id } = data.location
+                    const { name } = data.location
                     const { temp_c, temp_f } = data.current;
                     const { icon, text } = data.current.condition;
 
